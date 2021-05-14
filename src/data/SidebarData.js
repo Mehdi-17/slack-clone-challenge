@@ -8,11 +8,11 @@ import AppsIcon from '@material-ui/icons/Apps';
 export const sidebarItems = [
     {
         icon :  <MessageIcon />,
-        text: 'Thread'
+        text: 'Fils de discussion'
     }, 
     {
         icon :  <InboxIcon />,
-        text: 'Messages Privés'
+        text: 'Tous les messages directs'
     },
     {
         icon :  <DraftsIcon />,
@@ -20,7 +20,7 @@ export const sidebarItems = [
     },
     {
         icon :  <BookmarkBorderIcon />,
-        text: 'Eléments Sauvegardés'
+        text: 'Eléments enregistrés'
     },
     {
         icon : <PeopleIcon />,
@@ -30,4 +30,22 @@ export const sidebarItems = [
         icon :  <AppsIcon />,
         text: 'Voir Plus'
     }
-] 
+]
+
+export const sidebarChannelItems = [
+    {
+        name: 'Team Pionniers'
+    },
+    {
+        name: 'Team Offense'
+    },
+    {
+        name: 'Team Defense'
+    },
+    {
+        name: 'Air Force'
+    },
+    {
+        name: 'DBU'
+    }
+]

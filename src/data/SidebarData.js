@@ -31,21 +31,3 @@ export const sidebarItems = [
         text: 'Voir Plus'
     }
 ]
-
-export const sidebarChannelItems = [
-    {
-        name: 'Team Pionniers'
-    },
-    {
-        name: 'Team Offense'
-    },
-    {
-        name: 'Team Defense'
-    },
-    {
-        name: 'Air Force'
-    },
-    {
-        name: 'DBU'
-    }
-]

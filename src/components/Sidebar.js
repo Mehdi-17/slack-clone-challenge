@@ -3,8 +3,19 @@ import styled from 'styled-components';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import { sidebarItems } from '../data/SidebarData';
 import AddIcon from '@material-ui/icons/Add';
+import db from '../firbase';
 
 function Sidebar({ rooms }) {
+
+    const addChannel = () =>{
+        const promptName = prompt("Entrez le nom du channel");
+        if(promptName){
+            db.collection('rooms').add({
+                name: promptName,
+            })
+        }
+    }
+
     return (
         <Container>
             <WorkspaceContainer>
@@ -30,7 +41,7 @@ function Sidebar({ rooms }) {
                     <div>
                         Channels
                     </div>
-                    <AddIcon />
+                    <AddIcon onClick={addChannel}/>
                 </NewChannelContainer>
                 <ChannelsList>
                     {
